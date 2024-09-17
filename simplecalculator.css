@@ -1,0 +1,37 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    background-color: rebeccapurple;
+    padding: 20px;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+}
+.grid  input[type=text]{
+    grid-column: span 4;
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.grid .button{
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    border: none;
+    outline: none;
+}
+.button:hover{
+    background-color: red;
+    
+    
+}
+.grid input[type="text"][readonly]{
+        background-color: yellow;
+        cursor: not-allowed;
+}

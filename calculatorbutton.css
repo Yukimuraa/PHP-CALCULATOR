@@ -1,0 +1,43 @@
+
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 80px;
+}
+.box{
+    background-color: rebeccapurple;
+    padding: 30px;
+    width: 270px;
+    border-radius: 5px;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 9px;
+}
+.grid input[type=text]{
+    grid-column: span 4;
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    border-radius: 5px;
+    background-color: white;
+}
+.grid .button{
+    padding: 10px;
+    border-radius: 5px;
+    /* border: 2px solid black; */
+    background-color: snow;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    
+}
+.grid input[type=text][readonly]{
+    cursor: not-allowed;
+    background-color: yellow;
+}
